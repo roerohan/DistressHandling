@@ -5,7 +5,7 @@ Scaler
 from nltk.stem.porter import PorterStemmer
 from ast import literal_eval as vall
 
-weights = [1,1,1,1,1,1,1]
+weights = [2,4,6,7,9,7,8]
 stemmer = PorterStemmer()
 
 f = open('C:/Users/verma/OneDrive/Desktop/DevFest/CrimesList.txt','r')
