@@ -1,0 +1,145 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IDroid
+</name>
+</assembly>
+<members>
+<member name="T:IDroid.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:IDroid.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:IDroid.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:IDroid.My.Resources.Resources.aapt">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:IDroid.My.Resources.Resources.adb">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:IDroid.My.Resources.Resources.AdbWinApi">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:IDroid.My.Resources.Resources.AdbWinUsbApi">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:IDroid.My.Resources.Resources.fastboot">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="T:IDroid.Adb.AdbCommand">
+ <summary>
+  Helps you to execute and manage Adb Commands.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IDroid.Adb.AdbCommand.ExecuteCommand(System.String)">
+ <summary>
+ Executes the given AdbCommand and returns an IDroidResponse containing the execution results.
+ </summary>
+ <param name="Command"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:IDroid.Adb.AdbDeviceAdapter">
+ <summary>
+ Helps you to manage the connected Android devices.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IDroid.Adb.AdbDeviceAdapter.DeviceCollection">
+ <summary>
+ Returns a read-only collection of the Android Devices connected to the computer.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IDroid.Adb.AdbDeviceAdapter.SearchDevice(System.String,IDroid.Core.IDeviceSearchParameters)">
+ <summary>
+ Returns a IDroidDevice which satisfies the given data.
+ </summary>
+ <param name="data"></param>
+ <param name="searchparameter"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IDroid.Adb.AdbDeviceAdapter.LoadDevices">
+ <summary>
+ Loads the connected Android devices into the AdbDeviceAdapter.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:IDroid.Adb.AdbInitializer">
+ <summary>
+ Helps you to initialize Adb.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IDroid.Adb.AdbInitializer.InstallADT">
+ <summary>
+ Installs Android Debug Tools into root directory.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IDroid.Adb.AdbInitializer.RunDaemon">
+ <summary>
+ Runs the Adb Daemon.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:IDroid.Adb.AdbNetworkAdapter">
+ <summary>
+ Helps you to manage network connections for an IDroidDevice.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IDroid.Adb.AdbNetworkAdapter.GetDeviceIPAddress">
+ <summary>
+ Returns a read-only IPAddress of the selected IDroidDevice.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IDroid.Adb.AdbNetworkAdapter.ToggleWiFi">
+ <summary>
+ Changes WiFi State of device [ON-OFF].  [Note: This will only work when the device is unlocked.]                      
+ 
+ 
+ </summary>
+ <remarks>   </remarks>
+</member>
+<member name="M:IDroid.Adb.AdbNetworkAdapter.ToggleBluetooth">
+ <summary>
+ Changes Bluetooth State of device [ON-OFF].  [Note: This will only work when the device is unlocked.]                      
+ 
+ 
+ </summary>
+ <remarks>   </remarks>
+</member>
+</members>
+</doc>
